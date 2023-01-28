@@ -1,6 +1,6 @@
 package AddTwoNumbers
 
-class Solution {
+class AddTwoNumbers {
     fun addTwoNumbers(l1: ListNode?,l2: ListNode?): ListNode? {
         val result = ListNode(-1)
         var current = result
