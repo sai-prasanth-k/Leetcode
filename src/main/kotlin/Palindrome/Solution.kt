@@ -2,17 +2,18 @@ package Palindrome
 
 class Solution {
     fun isPalindrome(x: Int): Boolean {
-        if(x ==0) {
+        var y = x
+        if(y ==0) {
             return true
         };
-        if(x<0 || x % 10 ==0){
+        if(y<0 || y % 10 ==0){
             return false;
         }
 
         var reversed_num = 0
-        while(x > reversed_num){
+        while(y > reversed_num){
             var pop = x %10
-            x =x/10
+            y =y/10
 
             reversed_num = (reversed_num * 10) + pop
         }
